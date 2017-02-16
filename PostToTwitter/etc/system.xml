@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	 <tabs>
+        <dhimant module="dhimant_posttotwitter">
+            <label>Twitter Module (Dhimant)</label>
+            <sort_order>5000</sort_order>
+            <show_in_default>1</show_in_default>
+        </dhimant>
+     </tabs>
+
+   <sections>
+        <simplesettings module="adminhtml">
+            <label>Settings</label>
+            <tab>dhimant</tab> <!-- a tab with this name is defined above -->
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general>
+                    <label>General Settings</label>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <oauth_access_token>
+                            <label>OAuth Access Token</label>
+                            <comment>Please enter your twitter Oauth access token here.</comment>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>0</sort_order>
+                        </oauth_access_token>
+
+                        <oauth_access_token_secret>
+                            <label>OAuth Access Token Secret</label>
+                            <comment>Please enter your twitter Oauth access token secret here.</comment>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>0</sort_order>
+                        </oauth_access_token_secret>
+
+                        <consumer_key>
+                            <label>Consumer Key</label>
+                            <comment>Enter your twitter consumer key here.</comment>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>0</sort_order>
+                        </consumer_key>
+
+                        <consumer_secret>
+                            <label>Consumer Secret</label>
+                            <comment>Enter your twitter consumer secret here.</comment>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>0</sort_order>
+                        </consumer_secret>
+                      
+                    </fields>
+                </general>
+
+              
+            </groups>
+        </simplesettings>
+    </sections>
+</config>

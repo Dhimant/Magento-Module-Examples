@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is magento module config file -->
+<config>
+	<modules>
+	   <Dhimant_PostToTwitter>
+	   	  <version>0.0.1</version>
+	   </Dhimant_PostToTwitter>
+	</modules>
+
+	<global>
+		<models>
+			<dhimant_posttotwitter>
+				<class>Dhimant_PostToTwitter_Model</class>
+			</dhimant_posttotwitter>
+		</models>
+
+		<helpers>
+            <dhimant_posttotwitter>
+                <class>Dhimant_PostToTwitter_Helper</class>
+            </dhimant_posttotwitter>
+        </helpers>
+
+		<events>
+			<catalog_product_save_after>
+					<observers>
+						<dhimant_posttotwitter>
+							<class>dhimant_posttotwitter/observer</class>
+							<method>postTweet</method>
+							<type>singleton</type>
+						</dhimant_posttotwitter>
+					</observers>
+			</catalog_product_save_after>
+		</events>
+	</global>
+
+	<!-- <default>
+        <simplesettings>
+            <general>
+                <baseurl>http://enterprise.smsgupshup.com/GatewayAPI/rest</baseurl>
+                <active>0</active>
+                <username></username>
+                <password></password>
+                <overridednd>0</overridednd>
+            </general>
+          
+        </simplesettings>
+    </default> -->
+    
+</config>
