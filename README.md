@@ -1,10 +1,12 @@
-# Magento PostToTwitter Example
+# Magento Examples
 
-This is a magento extenstion created for the Magento ver. 1.9.3.1
+These are magento modules created for the Magento ver. 1.9.3.1
+
+**Note:** These modules are for demonstration purpose only and should not be used on a live site. 
 
 
 
-**How to install** 
+**How to install PostToTwitter** 
 
 -- Create a new directory named "Dhimant" under app/code/local/    (e.g app/code/local/Dhimant/) 
 
@@ -14,7 +16,7 @@ This is a magento extenstion created for the Magento ver. 1.9.3.1
 
 -- You must also create Dhimant_PostToTwitter.xml under app/etc/modules
 
--- Paste the following content withing Dhimant_PostToTwitter.xml
+-- Paste the following xml code within Dhimant_PostToTwitter.xml (i.e app/etc/modules)
 
 ```
 	<?xml version="1.0" encoding="UTF-8"?>
